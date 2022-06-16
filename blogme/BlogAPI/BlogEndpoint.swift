@@ -21,7 +21,7 @@ extension BlogEndpoint: RequestBuilder {
     var urlRequest: URLRequest {
         switch self {
         case .users:
-            guard let url = URL(string: "https://jsonplaceholder.typicode.com/users")
+            guard let url = URL(string: "\(BlogEndpoint.apiBaseURL)/users")
             else {preconditionFailure("Invalid URL format")}
             let request = URLRequest(url: url)
             return request
