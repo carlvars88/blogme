@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07888898285BAD5200C36A79 /* BlogEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07888897285BAD5200C36A79 /* BlogEndpoint.swift */; };
+		078888A6285BB82A00C36A79 /* BlogRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888A5285BB82A00C36A79 /* BlogRepositoryProtocol.swift */; };
+		078888B2285BC50500C36A79 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888B1285BC50500C36A79 /* UsersViewModel.swift */; };
+		078888BA285BC93900C36A79 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888B9285BC93900C36A79 /* UsersView.swift */; };
 		0797FE59285A46DE006DE4EE /* blogmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE58285A46DE006DE4EE /* blogmeApp.swift */; };
 		0797FE5B285A46DE006DE4EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE5A285A46DE006DE4EE /* ContentView.swift */; };
 		0797FE5D285A46DF006DE4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0797FE5C285A46DF006DE4EE /* Assets.xcassets */; };
@@ -15,13 +19,17 @@
 		0797FE6E285A55BB006DE4EE /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE6D285A55BB006DE4EE /* RequestBuilder.swift */; };
 		0797FE71285A577E006DE4EE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE70285A577E006DE4EE /* APIError.swift */; };
 		0797FE74285A5848006DE4EE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE73285A5848006DE4EE /* APIClient.swift */; };
-		0797FE79285A6049006DE4EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE78285A6049006DE4EE /* User.swift */; };
-		0797FE7E285A62A0006DE4EE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE7D285A62A0006DE4EE /* Address.swift */; };
-		0797FE81285A6367006DE4EE /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE80285A6367006DE4EE /* Geo.swift */; };
-		0797FE84285A64B3006DE4EE /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE83285A64B3006DE4EE /* Company.swift */; };
+		0797FE79285A6049006DE4EE /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE78285A6049006DE4EE /* UserAPI.swift */; };
+		0797FE7E285A62A0006DE4EE /* AddressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE7D285A62A0006DE4EE /* AddressAPI.swift */; };
+		0797FE81285A6367006DE4EE /* GeoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE80285A6367006DE4EE /* GeoAPI.swift */; };
+		0797FE84285A64B3006DE4EE /* CompanyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE83285A64B3006DE4EE /* CompanyAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07888897285BAD5200C36A79 /* BlogEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogEndpoint.swift; sourceTree = "<group>"; };
+		078888A5285BB82A00C36A79 /* BlogRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogRepositoryProtocol.swift; sourceTree = "<group>"; };
+		078888B1285BC50500C36A79 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		078888B9285BC93900C36A79 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		0797FE55285A46DE006DE4EE /* blogme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0797FE58285A46DE006DE4EE /* blogmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogmeApp.swift; sourceTree = "<group>"; };
 		0797FE5A285A46DE006DE4EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,10 +40,10 @@
 		0797FE6D285A55BB006DE4EE /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		0797FE70285A577E006DE4EE /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		0797FE73285A5848006DE4EE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		0797FE78285A6049006DE4EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0797FE7D285A62A0006DE4EE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		0797FE80285A6367006DE4EE /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
-		0797FE83285A64B3006DE4EE /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		0797FE78285A6049006DE4EE /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		0797FE7D285A62A0006DE4EE /* AddressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAPI.swift; sourceTree = "<group>"; };
+		0797FE80285A6367006DE4EE /* GeoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAPI.swift; sourceTree = "<group>"; };
+		0797FE83285A64B3006DE4EE /* CompanyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07888891285B88F000C36A79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0797FE78285A6049006DE4EE /* UserAPI.swift */,
+				0797FE7D285A62A0006DE4EE /* AddressAPI.swift */,
+				0797FE80285A6367006DE4EE /* GeoAPI.swift */,
+				0797FE83285A64B3006DE4EE /* CompanyAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		078888B6285BC55300C36A79 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				078888B1285BC50500C36A79 /* UsersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		078888B7285BC63B00C36A79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				078888B9285BC93900C36A79 /* UsersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0797FE4C285A46DE006DE4EE = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +103,8 @@
 		0797FE57285A46DE006DE4EE /* blogme */ = {
 			isa = PBXGroup;
 			children = (
+				078888B7285BC63B00C36A79 /* Views */,
+				078888B6285BC55300C36A79 /* ViewModels */,
 				0797FE77285A6034006DE4EE /* BlogAPI */,
 				0797FE68285A47CB006DE4EE /* API */,
 				0797FE58285A46DE006DE4EE /* blogmeApp.swift */,
@@ -101,10 +138,9 @@
 		0797FE77285A6034006DE4EE /* BlogAPI */ = {
 			isa = PBXGroup;
 			children = (
-				0797FE78285A6049006DE4EE /* User.swift */,
-				0797FE7D285A62A0006DE4EE /* Address.swift */,
-				0797FE80285A6367006DE4EE /* Geo.swift */,
-				0797FE83285A64B3006DE4EE /* Company.swift */,
+				078888A5285BB82A00C36A79 /* BlogRepositoryProtocol.swift */,
+				07888897285BAD5200C36A79 /* BlogEndpoint.swift */,
+				07888891285B88F000C36A79 /* Model */,
 			);
 			path = BlogAPI;
 			sourceTree = "<group>";
@@ -178,16 +214,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078888A6285BB82A00C36A79 /* BlogRepositoryProtocol.swift in Sources */,
+				078888B2285BC50500C36A79 /* UsersViewModel.swift in Sources */,
 				0797FE5B285A46DE006DE4EE /* ContentView.swift in Sources */,
+				07888898285BAD5200C36A79 /* BlogEndpoint.swift in Sources */,
 				0797FE6A285A543E006DE4EE /* APIClientProtocol.swift in Sources */,
+				078888BA285BC93900C36A79 /* UsersView.swift in Sources */,
 				0797FE59285A46DE006DE4EE /* blogmeApp.swift in Sources */,
-				0797FE84285A64B3006DE4EE /* Company.swift in Sources */,
+				0797FE84285A64B3006DE4EE /* CompanyAPI.swift in Sources */,
 				0797FE71285A577E006DE4EE /* APIError.swift in Sources */,
 				0797FE6E285A55BB006DE4EE /* RequestBuilder.swift in Sources */,
 				0797FE74285A5848006DE4EE /* APIClient.swift in Sources */,
-				0797FE7E285A62A0006DE4EE /* Address.swift in Sources */,
-				0797FE79285A6049006DE4EE /* User.swift in Sources */,
-				0797FE81285A6367006DE4EE /* Geo.swift in Sources */,
+				0797FE7E285A62A0006DE4EE /* AddressAPI.swift in Sources */,
+				0797FE79285A6049006DE4EE /* UserAPI.swift in Sources */,
+				0797FE81285A6367006DE4EE /* GeoAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct blogmeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UsersView()
         }
     }
 }

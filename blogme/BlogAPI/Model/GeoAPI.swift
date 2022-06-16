@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Geo: Codable {
+struct GeoAPI: Codable {
     let lat: String
-    let long: String
+    let lng: String
 }

@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Address: Codable {
+struct AddressAPI: Codable {
     let street: String
     let suite: String
     let city: String
     let zipcode: String
-    let geo: Geo
+    let geo: GeoAPI
 }
