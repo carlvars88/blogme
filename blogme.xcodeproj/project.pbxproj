@@ -15,6 +15,7 @@
 		078888BF285BD63A00C36A79 /* Swinject-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 078888BD285BD63A00C36A79 /* Swinject-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		078888C3285BD67300C36A79 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888C2285BD67300C36A79 /* Resolver.swift */; };
 		078888C5285BD6C100C36A79 /* IocContactainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888C4285BD6C100C36A79 /* IocContactainer.swift */; };
+		078888C9285BE31F00C36A79 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888C8285BE31F00C36A79 /* UserDetailView.swift */; };
 		0797FE59285A46DE006DE4EE /* blogmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE58285A46DE006DE4EE /* blogmeApp.swift */; };
 		0797FE5B285A46DE006DE4EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE5A285A46DE006DE4EE /* ContentView.swift */; };
 		0797FE5D285A46DF006DE4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0797FE5C285A46DF006DE4EE /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		078888B9285BC93900C36A79 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		078888C2285BD67300C36A79 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		078888C4285BD6C100C36A79 /* IocContactainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IocContactainer.swift; sourceTree = "<group>"; };
+		078888C8285BE31F00C36A79 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		0797FE55285A46DE006DE4EE /* blogme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0797FE58285A46DE006DE4EE /* blogmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogmeApp.swift; sourceTree = "<group>"; };
 		0797FE5A285A46DE006DE4EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				078888B9285BC93900C36A79 /* UsersView.swift */,
+				078888C8285BE31F00C36A79 /* UserDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				078888A6285BB82A00C36A79 /* BlogRepositoryProtocol.swift in Sources */,
 				078888B2285BC50500C36A79 /* UsersViewModel.swift in Sources */,
 				0797FE5B285A46DE006DE4EE /* ContentView.swift in Sources */,
+				078888C9285BE31F00C36A79 /* UserDetailView.swift in Sources */,
 				07888898285BAD5200C36A79 /* BlogEndpoint.swift in Sources */,
 				0797FE6A285A543E006DE4EE /* APIClientProtocol.swift in Sources */,
 				078888C5285BD6C100C36A79 /* IocContactainer.swift in Sources */,

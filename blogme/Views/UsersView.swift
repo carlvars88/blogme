@@ -13,8 +13,10 @@ struct UsersView: View {
     
     var body: some View {
         NavigationView {
-            List(self.usersViewModel.users) { user in
-                Text(user.name)
+            List {
+                ForEach (usersViewModel.users) { user in
+                    USerCell(user: user)
+                }
             }
             .navigationBarTitle("Users")
         }
@@ -23,3 +25,19 @@ struct UsersView: View {
         }
     }
 }
+
+struct USerCell: View {
+    var user: UserAPI
+    var body: some View {
+        NavigationLink(destination: UserDetailView(selectedUser: user)) {
+            HStack {
+            Image(systemName: "person.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 60)
+                Text(user.name)
+            }
+        }
+    }
+}
+
