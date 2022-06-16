@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		078888A6285BB82A00C36A79 /* BlogRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888A5285BB82A00C36A79 /* BlogRepositoryProtocol.swift */; };
 		078888B2285BC50500C36A79 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888B1285BC50500C36A79 /* UsersViewModel.swift */; };
 		078888BA285BC93900C36A79 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888B9285BC93900C36A79 /* UsersView.swift */; };
+		078888BE285BD63A00C36A79 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 078888BD285BD63A00C36A79 /* Swinject-Dynamic */; };
+		078888BF285BD63A00C36A79 /* Swinject-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 078888BD285BD63A00C36A79 /* Swinject-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		078888C3285BD67300C36A79 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888C2285BD67300C36A79 /* Resolver.swift */; };
+		078888C5285BD6C100C36A79 /* IocContactainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078888C4285BD6C100C36A79 /* IocContactainer.swift */; };
 		0797FE59285A46DE006DE4EE /* blogmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE58285A46DE006DE4EE /* blogmeApp.swift */; };
 		0797FE5B285A46DE006DE4EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE5A285A46DE006DE4EE /* ContentView.swift */; };
 		0797FE5D285A46DF006DE4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0797FE5C285A46DF006DE4EE /* Assets.xcassets */; };
@@ -25,11 +29,27 @@
 		0797FE84285A64B3006DE4EE /* CompanyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797FE83285A64B3006DE4EE /* CompanyAPI.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		078888C0285BD63A00C36A79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				078888BF285BD63A00C36A79 /* Swinject-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07888897285BAD5200C36A79 /* BlogEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogEndpoint.swift; sourceTree = "<group>"; };
 		078888A5285BB82A00C36A79 /* BlogRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogRepositoryProtocol.swift; sourceTree = "<group>"; };
 		078888B1285BC50500C36A79 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		078888B9285BC93900C36A79 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		078888C2285BD67300C36A79 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		078888C4285BD6C100C36A79 /* IocContactainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IocContactainer.swift; sourceTree = "<group>"; };
 		0797FE55285A46DE006DE4EE /* blogme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0797FE58285A46DE006DE4EE /* blogmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogmeApp.swift; sourceTree = "<group>"; };
 		0797FE5A285A46DE006DE4EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078888BE285BD63A00C36A79 /* Swinject-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +105,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		078888C1285BD65400C36A79 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				078888C2285BD67300C36A79 /* Resolver.swift */,
+				078888C4285BD6C100C36A79 /* IocContactainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		0797FE4C285A46DE006DE4EE = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +133,7 @@
 		0797FE57285A46DE006DE4EE /* blogme */ = {
 			isa = PBXGroup;
 			children = (
+				078888C1285BD65400C36A79 /* DI */,
 				078888B7285BC63B00C36A79 /* Views */,
 				078888B6285BC55300C36A79 /* ViewModels */,
 				0797FE77285A6034006DE4EE /* BlogAPI */,
@@ -155,12 +186,16 @@
 				0797FE51285A46DE006DE4EE /* Sources */,
 				0797FE52285A46DE006DE4EE /* Frameworks */,
 				0797FE53285A46DE006DE4EE /* Resources */,
+				078888C0285BD63A00C36A79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = blogme;
+			packageProductDependencies = (
+				078888BD285BD63A00C36A79 /* Swinject-Dynamic */,
+			);
 			productName = blogme;
 			productReference = 0797FE55285A46DE006DE4EE /* blogme.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 0797FE4C285A46DE006DE4EE;
+			packageReferences = (
+				078888BC285BD63A00C36A79 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 0797FE56285A46DE006DE4EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,11 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078888C3285BD67300C36A79 /* Resolver.swift in Sources */,
 				078888A6285BB82A00C36A79 /* BlogRepositoryProtocol.swift in Sources */,
 				078888B2285BC50500C36A79 /* UsersViewModel.swift in Sources */,
 				0797FE5B285A46DE006DE4EE /* ContentView.swift in Sources */,
 				07888898285BAD5200C36A79 /* BlogEndpoint.swift in Sources */,
 				0797FE6A285A543E006DE4EE /* APIClientProtocol.swift in Sources */,
+				078888C5285BD6C100C36A79 /* IocContactainer.swift in Sources */,
 				078888BA285BC93900C36A79 /* UsersView.swift in Sources */,
 				0797FE59285A46DE006DE4EE /* blogmeApp.swift in Sources */,
 				0797FE84285A64B3006DE4EE /* CompanyAPI.swift in Sources */,
@@ -414,6 +454,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		078888BC285BD63A00C36A79 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		078888BD285BD63A00C36A79 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 078888BC285BD63A00C36A79 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0797FE4D285A46DE006DE4EE /* Project object */;
 }

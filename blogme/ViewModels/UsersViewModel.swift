@@ -16,7 +16,7 @@ class UsersViewModel: ObservableObject, BlogRepositoryProtocol {
     
     var cancellables = Set<AnyCancellable>()
     
-    init(apiClient: APIClientProtocol = APIClient()) {
+    init(apiClient: APIClientProtocol) {
         self.apiClient = apiClient
     }
     
@@ -32,7 +32,7 @@ class UsersViewModel: ObservableObject, BlogRepositoryProtocol {
                 
             }) { (userList) in
                 self.users = userList
-                print(userList)
+                
             }
         cancellables.insert(cancellable)
     }

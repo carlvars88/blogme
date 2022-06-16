@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UsersView: View {
     
-    @ObservedObject var usersViewModel = UsersViewModel()
+    @ObservedObject var usersViewModel = UsersViewModel(apiClient: Resolver.shared.resolve(APIClientProtocol.self))
     
     var body: some View {
         NavigationView {
